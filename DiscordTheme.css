@@ -1,0 +1,222 @@
+/* If you do not want some things reverted, commend out imports like /* @import url("...") */
+
+body {
+  /* Revert new green to old color */
+  --old-green: #43b581;
+  --info-positive-foreground: var(--old-green);
+  --status-positive-background: var(--old-green);
+  --text-positive: var(--old-green);
+
+  /* Revert new red to old color */
+  --old-red: #f04747;
+  --text-danger: var(--old-red);
+  --info-danger-foreground: var(--old-red);
+  --status-danger-background: var(--old-red);
+
+  /* Revert to old font var */
+  --font-display: var(--font-primary);
+
+  /* Found in Discord's CSS file: oldBrand vs newBrand HTML class - here we force old brand vars via copying */
+  --brand-experiment-100: #f8f9fd;
+  --brand-experiment-130: #f2f4fc;
+  --brand-experiment-160: #ebeefa;
+  --brand-experiment-200: #e3e7f8;
+  --brand-experiment-230: #dae0f5;
+  --brand-experiment-260: #d1d9f3;
+  --brand-experiment-300: #c7d0f0;
+  --brand-experiment-330: #b5c1ec;
+  --brand-experiment-360: #a5b3e7;
+  --brand-experiment-400: #8ea1e1;
+  --brand-experiment-430: #869adf;
+  --brand-experiment-460: #7d92dd;
+
+  --brand-experiment: #7289da;
+
+  --brand-experiment-500: #7289da;
+  --brand-experiment-530: #687dc6;
+  --brand-experiment-560: #5c6fb1;
+  --brand-experiment-600: #4e5d94;
+  --brand-experiment-630: #435180;
+  --brand-experiment-660: #3b4770;
+  --brand-experiment-700: #2e3757;
+  --brand-experiment-730: #2b3352;
+  --brand-experiment-760: #272f4b;
+  --brand-experiment-800: #222941;
+  --brand-experiment-830: #1a2032;
+  --brand-experiment-860: #111521;
+  --brand-experiment-900: #06070b;
+
+  --brand-experiment-05a: rgba(114,137,218,0.05);
+  --brand-experiment-10a: rgba(114,137,218,0.1);
+  --brand-experiment-15a: rgba(114,137,218,0.15);
+  --brand-experiment-20a: rgba(114,137,218,0.2);
+  --brand-experiment-25a: rgba(114,137,218,0.25);
+  --brand-experiment-30a: rgba(114,137,218,0.3);
+  --brand-experiment-35a: rgba(114,137,218,0.35);
+  --brand-experiment-40a: rgba(114,137,218,0.4);
+  --brand-experiment-45a: rgba(114,137,218,0.45);
+  --brand-experiment-50a: rgba(114,137,218,0.5);
+  --brand-experiment-55a: rgba(114,137,218,0.55);
+  --brand-experiment-60a: rgba(114,137,218,0.6);
+  --brand-experiment-65a: rgba(114,137,218,0.65);
+  --brand-experiment-70a: rgba(114,137,218,0.7);
+  --brand-experiment-75a: rgba(114,137,218,0.75);
+  --brand-experiment-80a: rgba(114,137,218,0.8);
+  --brand-experiment-85a: rgba(114,137,218,0.85);
+  --brand-experiment-90a: rgba(114,137,218,0.9);
+  --brand-experiment-95a: rgba(114,137,218,0.95);
+}
+
+/* Revert mentions and channel links */
+#app-mount .wrapper-3WhCwL {
+  color: var(--brand-experiment-460);
+  background: var(--brand-experiment-10a);
+
+  text-decoration: none !important;
+  padding: 0 1px;
+}
+
+#app-mount .wrpper-3aWhCwL:hover {
+  background: var(--brand-experiment);
+  color: var(--brand-experiment-100);
+}
+
+.avatarSpeaking-2c8-9i,
+#bd-pub-li {
+    display: none;
+}
+
+.reaction-2A2y9y {
+    background-color: #292b2f;
+    border-radius: 6px;
+    color: #ce202a;
+}
+
+.reaction-2A2y9y.reactionMe-3I9gFK {
+    background-color: #3d4562;
+    color: #ce202a;
+    border-color: transparent;
+}
+.reaction-2A2y9y .reactionCount-1zkLcN{
+    font-weight: 500;
+    font-size: 14px;
+    color: #878990;
+}
+.reaction-2A2y9y.reactionMe-3I9gFK .reactionCount-1zkLcN {
+    color: #ce202a;
+}
+
+.reactionInner-9eVHJa {
+    padding: 1px 3px;
+}
+
+.reaction-2A2y9y .emoji {
+    width: 17px;
+    height: 17px;
+}
+
+.reaction-2A2y9y {
+    border-radius: 6px;
+}
+
+/* Default font family. Backup if someone will destroy this */
+/* * {
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+} */
+
+.rtcConnectionStatusConnected-VRZDjy {
+    color: var(--old-green);
+}
+
+.rtcConnectionQualityFine-2J6i8z .pingForeground-2uAOZ3 {
+    color: var(--old-green);
+}
+
+.menu-3sdvDG .item-1tOPte:nth-child(1) .status-1AY8sU {
+    background-color: var(--old-green) !important;
+}
+
+.avatarSpeaking-2IGMRN {
+    -webkit-box-shadow: inset 0 0 0 2px var(--old-green),
+        inset 0 0 0 3px var(--background-secondary);
+    box-shadow: inset 0 0 0 2px var(--old-green),
+        inset 0 0 0 3px var(--background-secondary);
+}
+
+.theme-dark {
+    --text-positive: var(--old-green);
+}
+
+.theme-dark, .theme-light {
+    --info-positive-foreground: var(--old-green);
+    --status-positive-background: var(--old-green);
+}
+
+.border-3dQmSY.speaking-WDn8Wm {
+    -webkit-box-shadow: inset 0 0 0 2px var(--old-green), 
+        inset 0 0 0 3px #000;
+    box-shadow: inset 0 0 0 2px var(--old-green), 
+        inset 0 0 0 3px #000;
+}
+
+.iconBadge-3qSJIw.participating-1NvRVd {
+    background-color: var(--old-green);
+}
+
+.button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp, .button-1YfofB .buttonColor-7qQbGO.buttonActive-3FrkXp {
+    background-color: var(--old-green);
+}
+
+.button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp:hover, .button-1YfofB .buttonColor-7qQbGO.buttonActive-3FrkXp:hover {
+    background-color: #1eb771;
+}
+
+rect[fill="#3ba55c"]
+{
+    fill: var(--old-green);
+}
+
+.container-3auIfb:not([style="opacity: 1; background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%);"])
+{
+    background-color: var(--old-green) !important;
+}
+
+.tutorialContainer-2sGCg9 .selected-bZ3Lue .childWrapper-anI2G9 {
+    background-color: var(--brand-experiment-500);
+}
+
+.folder-1hbNCn, .folderIconWrapper-1_bOZe {
+    background-color: rgba(113, 137, 218, 0.29) !important;
+}
+
+/* Revert reactions */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/reactions.css');
+
+/* Revert profile pictures */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/pfps.css');
+
+/* Revert folders (default colors back to old blurple) */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/folders.css');
+
+/* Revert new user modals */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/oldUserModal.css');
+
+
+/* General changes: */
+
+/* Revert some BD specific elements */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/general/bd.css');
+
+/* Revert some inputs */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/general/inputs.css');
+
+/* Revert some SVGs (colors for smaller icons) */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/general/svgs.css');
+
+/* Revert some other minor things */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/general/other.css');
+
+
+.avatarSpeaking-33RRJU {
+	display: none;
+}
